@@ -1,0 +1,42 @@
+{
+    "name": "dragon-black/json-rpc-doc",
+    "type": "symfony-bundle",
+    "description": "This bundle provides a json rpc 2.0 documentation generation for Symfony",
+    "keywords": ["json-rpc", "rpc-doc", "json-rpc-doc"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Serhii Cheriachukin",
+            "email": "cheriachukin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "nanofelis/json-rpc-bundle": "^2.1",
+        "symfony/options-resolver": "^4.4|^5.0",
+        "symfony/property-access": "^4.4|^5.0",
+        "symfony/serializer": "^4.4|^5.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^4.4|^5.0",
+        "symfony/var-dumper": "^4.4|^5.0",
+        "symfony/browser-kit": "^4.4|^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DragonBlack\\Bundle\\JsonRpcDocBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": { "Tests\\": "Tests/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.0-dev"
+        }
+    }
+}
